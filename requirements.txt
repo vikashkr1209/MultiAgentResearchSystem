@@ -1,0 +1,66 @@
+# ============================================
+# MULTI-AGENT RESEARCH SYSTEM - Requirements
+# ============================================
+
+# ── Core LangChain & LCEL Pipeline ──────────
+langchain>=0.3.0
+langchain-core>=0.3.0
+langchain-community>=0.3.0
+langchain-mistralai>=0.2.0
+langgraph>=0.2.0
+
+# ── LLM Providers ───────────────────────────
+mistralai>=1.0.0
+anthropic>=0.37.0                   # optional fallback
+
+# ── Search & Web Tools ──────────────────────
+tavily-python>=0.5.0
+duckduckgo-search>=6.3.0
+
+# ── Web Scraping ─────────────────────────────
+beautifulsoup4>=4.12.0
+requests>=2.32.0
+httpx>=0.27.0
+lxml>=5.2.0                         # fast BS4 parser
+html5lib>=1.1                       # tolerant BS4 parser
+playwright>=1.47.0                  # JS-rendered pages (optional)
+
+# ── Vector Store & Embeddings ────────────────
+faiss-cpu>=1.8.0
+chromadb>=0.5.0
+sentence-transformers>=3.0.0
+tiktoken>=0.7.0
+
+# ── Document Loaders & Parsing ───────────────
+pypdf>=4.3.0
+python-docx>=1.1.0
+unstructured>=0.15.0
+markdownify>=0.13.0                 # HTML → Markdown
+
+# ── Agent Memory ─────────────────────────────
+mem0ai>=0.1.0                       # long-term agent memory
+redis>=5.0.0                        # optional memory backend
+
+# ── Async & Concurrency ──────────────────────
+asyncio>=3.4.3
+aiohttp>=3.10.0
+nest-asyncio>=1.6.0
+
+# ── Data Handling ────────────────────────────
+pydantic>=2.8.0
+python-dotenv>=1.0.0
+pandas>=2.2.0
+numpy>=1.26.0
+
+# ── Output & Logging ─────────────────────────
+rich>=13.8.0                        # pretty console output
+loguru>=0.7.0                       # structured logging
+tqdm>=4.66.0                        # progress bars
+
+# ── API & Serving (optional) ─────────────────
+fastapi>=0.115.0
+uvicorn>=0.30.0
+streamlit>=1.38.0                   # quick research UI
+
+# ── Tracing & Observability ──────────────────
+langsmith>=0.1.0                    # LangChain tracing
